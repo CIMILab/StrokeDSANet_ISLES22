@@ -82,12 +82,6 @@ $$
 
 Morphological post-processing removes connected components smaller than 30 voxels.
 
-## Results (ISLES 2022 Test Set)
-
-| Metric | Score |
-| :--- | :---: |
-| Dice | **0.8092** |
-| Micro-F1 | **0.8814** |
 
 ## Discussion
 
@@ -117,13 +111,6 @@ DSANet-ISLES provides an interpretable and reproducible ensemble strategy for is
    `- js/
 ```
 
-## Local Preview
-
-```bash
-python -m http.server 8000
-```
-
-Open http://localhost:8000 in your browser.
 
 ## Citation
 
