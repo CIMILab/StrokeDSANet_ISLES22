@@ -69,11 +69,13 @@ $$
 ### TTA and Decision Rule
 
 $$
-P_{\text{TTA}} = \frac{1}{3} \Big(
+\begin{aligned}
+P_{\text{TTA}} = \frac{1}{3} \Big(&
 P_{\text{ens}}(x)
-+ \text{Flip}_x^{-1}\big(P_{\text{ens}}(\text{Flip}_x(x))\big)
-+ \text{Flip}_y^{-1}\big(P_{\text{ens}}(\text{Flip}_y(x))\big)
++ \text{Flip}_x^{-1}\big(P_{\text{ens}}(\text{Flip}_x(x))\big) \\
+&+ \text{Flip}_y^{-1}\big(P_{\text{ens}}(\text{Flip}_y(x))\big)
 \Big)
+\end{aligned}
 $$
 
 $$
