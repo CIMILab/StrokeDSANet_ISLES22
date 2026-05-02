@@ -63,21 +63,21 @@ $$
 Final weights used in the reported setup:
 
 $$
-w_D = 0.8,\quad w_A = 0.2,\quad w_S = 0.0
+w_D = 0.7000000000000002,\quad w_A = 0.19999999999999982,\quad w_S = 0.1
 $$
 
 ### TTA and Decision Rule
 
 $$
-\begin{aligned}
-P_{TTA} = \frac{1}{3}\Big(&P_{ens}(x)
-+ Flip_x^{-1}(P_{ens}(Flip_x(x))) \\
-&+ Flip_y^{-1}(P_{ens}(Flip_y(x)))\Big)
-\end{aligned}
+P_{\text{TTA}} = \frac{1}{3} \Big(
+P_{\text{ens}}(x)
++ \text{Flip}_x^{-1}\big(P_{\text{ens}}(\text{Flip}_x(x))\big)
++ \text{Flip}_y^{-1}\big(P_{\text{ens}}(\text{Flip}_y(x))\big)
+\Big)
 $$
 
 $$
-\hat{Y} = \mathbb{1}[P_{TTA} \geq \tau], \quad \tau = 0.5
+\hat{Y} = \mathbb{1}\left[P_{\text{TTA}} \geq \tau \right], \quad \tau = 0.45
 $$
 
 Morphological post-processing removes connected components smaller than 30 voxels.
